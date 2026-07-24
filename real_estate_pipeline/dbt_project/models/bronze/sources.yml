@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: FINANCE_DW
+    schema: BRONZE
+    tables:
+      - name: RAW_ACCOUNTS
+      - name: RAW_CUSTOMERS
+      - name: RAW_LOANS
+      - name: RAW_TRANSACTIONS

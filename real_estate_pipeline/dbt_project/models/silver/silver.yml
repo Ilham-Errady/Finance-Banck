@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Nettoyage et déduplication des données clients brutes"
+    columns:
+      - name: customer_id
+        description: "Identifiant unique du client"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_accounts
+    description: "Données nettoyées des comptes bancaires"
+    columns:
+      - name: account_id
+        description: "Identifiant unique du compte"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Référence vers le client propriétaire"
+        tests:
+          - not_null
+
+  - name: stg_loans
+    description: "Données nettoyées des prêts bancaires"
+    columns:
+      - name: loan_id
+        description: "Identifiant unique du prêt"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_transactions
+    description: "Historique nettoyé des transactions bancaires"
+    columns:
+      - name: transaction_id
+        description: "Identifiant unique de la transaction"
+        tests:
+          - unique
+          - not_null
