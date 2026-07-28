@@ -223,17 +223,3 @@ Mes principales contributions sont :
 
 * **Problème :** Ralentissement lors des requêtes d'agrégation entre la table de faits des prêts (`fct_loans`) et les dimensions clients/comptes.
 * **Solution :** Restructuration propre des tables de dimensions (`dim_accounts`, `dim_customers`, `dim_date`) dans la couche Gold de dbt afin de garantir une modélisation en étoile fluide et rapide.
-
----
-
-## 💡 Améliorations possibles
-
-Dans une prochaine version, je pourrais :
-
-* Intégrer un modèle de **Machine Learning** (à partir du notebook `eda.ipynb`) pour la détection prédictive de la fraude.
-* Mettre en place un système d'alerte en temps réel lors de la détection d'une anomalie critique.
-* Publier le rapport sur **Power BI Service** avec un rafraîchissement automatique programmé.
-* Déployer l'infrastructure via Infrastructure as Code (Terraform).
-
-```
-```
