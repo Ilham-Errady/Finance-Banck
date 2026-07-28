@@ -57,7 +57,6 @@ def load_raw_data_to_bronze():
             df.columns = [col.upper() for col in df.columns]
             df["_INGESTED_AT"] = pd.Timestamp.now()
 
-            # Drop table if exists باش t-recréa b UPPERCASE clean
             cursor = conn.cursor()
             cursor.execute(f"DROP TABLE IF EXISTS {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.{table_name};")
             cursor.close()
@@ -70,7 +69,7 @@ def load_raw_data_to_bronze():
                 database=SNOWFLAKE_DATABASE,
                 schema=SNOWFLAKE_SCHEMA,
                 auto_create_table=True,
-                quote_identifiers=False  # 🟢 Force Unquoted Uppercase in Snowflake
+                quote_identifiers=False 
             )
             
             if success:

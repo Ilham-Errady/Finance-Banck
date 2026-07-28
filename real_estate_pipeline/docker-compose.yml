@@ -32,7 +32,7 @@ services:
     command: >
       bash -c "pip install dbt-snowflake &&
               airflow db init &&
-              airflow users create --username admin --firstname Rime --lastname Errady --role Admin --email admin@example.com --password admin &&
+              airflow users create --username admin --firstname Ilham --lastname Errady --role Admin --email admin@example.com --password admin &&
               airflow webserver"
 
   scheduler:

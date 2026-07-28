@@ -7761,3 +7761,2661 @@ having count(*) > 1
 [0m13:49:40.481125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261f3a71cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261bded6d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7261f2634910>]}
 [0m13:49:40.481874 [debug] [MainThread]: Flushing usage events
 [0m13:49:40.993584 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:48:25.484065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47155b9f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4713e7a620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4713e7a5c0>]}
+
+
+============================== 08:48:25.490042 | a48dc18b-ff0b-4df5-b4ed-59c176913e9e ==============================
+[0m08:48:25.490042 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:48:25.491139 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'target_path': 'None', 'static_parser': 'True', 'version_check': 'True', 'no_print': 'None', 'log_path': '/opt/airflow/dbt_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'invocation_command': 'dbt run', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'empty': 'False', 'introspect': 'True', 'hints_enabled': 'True', 'printer_width': '80', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'profiles_dir': '/opt/airflow/dbt_project'}
+[0m08:48:26.385540 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:48:26.386856 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:48:26.387873 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:48:26.610276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46de497220>]}
+[0m08:48:26.661452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4713e995a0>]}
+[0m08:48:26.664150 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:48:26.757732 [debug] [MainThread]: checksum: 17b8c0eed372bdc76158915a5b86153b95ebcdfebef695d6713d3c569800f71e, vars: {}, profile: dbt_project, target: dev, version: 1.12.0
+[0m08:48:27.248494 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:48:27.250407 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:48:27.252137 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:48:27.263884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46de12df90>]}
+[0m08:48:27.457604 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:48:27.479810 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:48:27.511210 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:48:27.579854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46dddd09d0>]}
+[0m08:48:27.581089 [info ] [MainThread]: Found 9 models, 21 data tests, 4 sources, 546 macros
+[0m08:48:27.582684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46dddd0f40>]}
+[0m08:48:27.587417 [info ] [MainThread]: 
+[0m08:48:27.588858 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:48:27.590061 [info ] [MainThread]: 
+[0m08:48:27.591386 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:48:27.600072 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW'
+[0m08:48:27.600917 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW'
+[0m08:48:27.618779 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW"
+[0m08:48:27.619247 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW"
+[0m08:48:27.620319 [debug] [ThreadPool]: On list_FINANCE_DW: show terse schemas in database FINANCE_DW
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW"} */
+[0m08:48:27.624130 [debug] [ThreadPool]: On list_FINANCE_DW: show terse schemas in database FINANCE_DW
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW"} */
+[0m08:48:27.625443 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:48:27.627291 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:48:31.377046 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.750 seconds
+[0m08:48:31.656324 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 4.031 seconds
+[0m08:48:31.660752 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FINANCE_DW, now list_FINANCE_DW_silver)
+[0m08:48:31.661357 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FINANCE_DW, now list_FINANCE_DW_gold)
+[0m08:48:31.670228 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:48:31.671766 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:48:31.672695 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show objects in FINANCE_DW.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */;
+[0m08:48:31.673597 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show objects in FINANCE_DW.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */;
+[0m08:48:32.046448 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.372 seconds
+[0m08:48:32.051773 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:48:32.052757 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show user functions in FINANCE_DW.silver
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */
+[0m08:48:32.058970 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.383 seconds
+[0m08:48:32.062581 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:48:32.063579 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show user functions in FINANCE_DW.gold
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */
+[0m08:48:32.166907 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.102 seconds
+[0m08:48:32.168539 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.115 seconds
+[0m08:48:32.174482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ddf391e0>]}
+[0m08:48:32.180396 [debug] [Thread-2 (]: Began running node model.real_estate_pipeline.stg_accounts
+[0m08:48:32.180739 [debug] [Thread-3 (]: Began running node model.real_estate_pipeline.stg_customers
+[0m08:48:32.181057 [debug] [Thread-4 (]: Began running node model.real_estate_pipeline.stg_loans
+[0m08:48:32.181352 [debug] [Thread-5 (]: Began running node model.real_estate_pipeline.stg_transactions
+[0m08:48:32.181921 [info ] [Thread-2 (]: 1 of 9 START sql view model silver.stg_accounts ................................ [RUN]
+[0m08:48:32.183171 [info ] [Thread-3 (]: 2 of 9 START sql view model silver.stg_customers ............................... [RUN]
+[0m08:48:32.184283 [info ] [Thread-4 (]: 3 of 9 START sql view model silver.stg_loans ................................... [RUN]
+[0m08:48:32.184901 [info ] [Thread-5 (]: 4 of 9 START sql view model silver.stg_transactions ............................ [RUN]
+[0m08:48:32.185536 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_silver, now model.real_estate_pipeline.stg_accounts)
+[0m08:48:32.186240 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_gold, now model.real_estate_pipeline.stg_customers)
+[0m08:48:32.187313 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.real_estate_pipeline.stg_loans'
+[0m08:48:32.189567 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.real_estate_pipeline.stg_transactions'
+[0m08:48:32.190684 [debug] [Thread-2 (]: Began compiling node model.real_estate_pipeline.stg_accounts
+[0m08:48:32.192297 [debug] [Thread-3 (]: Began compiling node model.real_estate_pipeline.stg_customers
+[0m08:48:32.193716 [debug] [Thread-4 (]: Began compiling node model.real_estate_pipeline.stg_loans
+[0m08:48:32.195824 [debug] [Thread-5 (]: Began compiling node model.real_estate_pipeline.stg_transactions
+[0m08:48:32.203375 [debug] [Thread-2 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_accounts"
+[0m08:48:32.206875 [debug] [Thread-3 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_customers"
+[0m08:48:32.210194 [debug] [Thread-4 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_loans"
+[0m08:48:32.212484 [debug] [Thread-5 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_transactions"
+[0m08:48:32.234777 [debug] [Thread-2 (]: Began executing node model.real_estate_pipeline.stg_accounts
+[0m08:48:32.241908 [debug] [Thread-5 (]: Began executing node model.real_estate_pipeline.stg_transactions
+[0m08:48:32.248553 [debug] [Thread-3 (]: Began executing node model.real_estate_pipeline.stg_customers
+[0m08:48:32.248941 [debug] [Thread-4 (]: Began executing node model.real_estate_pipeline.stg_loans
+[0m08:48:32.257956 [debug] [Thread-2 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_accounts"
+[0m08:48:32.259699 [debug] [Thread-5 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_transactions"
+[0m08:48:32.262668 [debug] [Thread-3 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_customers"
+[0m08:48:32.265098 [debug] [Thread-4 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_loans"
+[0m08:48:32.286155 [debug] [Thread-3 (]: Using snowflake connection "model.real_estate_pipeline.stg_customers"
+[0m08:48:32.287996 [debug] [Thread-5 (]: Using snowflake connection "model.real_estate_pipeline.stg_transactions"
+[0m08:48:32.289438 [debug] [Thread-4 (]: Using snowflake connection "model.real_estate_pipeline.stg_loans"
+[0m08:48:32.294335 [debug] [Thread-3 (]: On model.real_estate_pipeline.stg_customers: create or replace   view FINANCE_DW.silver.stg_customers
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as customer_id,
+        trim($2)::varchar as first_name,
+        trim($3)::varchar as last_name,
+        try_to_timestamp(nullif(trim($4::varchar), 'NaT')) as date_of_birth,
+        $5::int as address_id,
+        $6::int as customer_type_id,
+        row_number() over (
+            partition by $1::int 
+            order by $1::int
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_CUSTOMERS
+)
+
+select
+    customer_id,
+    first_name,
+    last_name,
+    date_of_birth,
+    address_id,
+    customer_type_id
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_customers"} */;
+[0m08:48:32.295989 [debug] [Thread-5 (]: On model.real_estate_pipeline.stg_transactions: create or replace   view FINANCE_DW.silver.stg_transactions
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as transaction_id,
+        $2::int as account_origin_id,
+        $3::int as account_destination_id,
+        $4::int as transaction_type_id,
+        $5::numeric(15,2) as amount,
+        $6::timestamp as transaction_date,
+        $7::int as branch_id,
+        trim($8)::varchar as description,
+        row_number() over (
+            partition by $1::int 
+            order by $6::timestamp desc
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_TRANSACTIONS
+)
+
+select
+    transaction_id,
+    account_origin_id,
+    account_destination_id,
+    transaction_type_id,
+    amount,
+    transaction_date,
+    branch_id,
+    description
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_transactions"} */;
+[0m08:48:32.298592 [debug] [Thread-4 (]: On model.real_estate_pipeline.stg_loans: create or replace   view FINANCE_DW.silver.stg_loans
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as loan_id,
+        $2::int as account_id,
+        $3::int as loan_status_id,
+        $4::numeric(15,2) as principal_amount,
+        $5::numeric(5,4) as interest_rate,
+        $6::timestamp as start_date,
+        $7::timestamp as estimated_end_date,
+        row_number() over (
+            partition by $1::int 
+            order by $6::timestamp desc
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_LOANS
+)
+
+select
+    loan_id,
+    account_id,
+    loan_status_id,
+    principal_amount,
+    interest_rate,
+    start_date,
+    estimated_end_date
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_loans"} */;
+[0m08:48:32.304468 [debug] [Thread-2 (]: Using snowflake connection "model.real_estate_pipeline.stg_accounts"
+[0m08:48:32.308151 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m08:48:32.309137 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m08:48:32.309849 [debug] [Thread-2 (]: On model.real_estate_pipeline.stg_accounts: create or replace   view FINANCE_DW.silver.stg_accounts
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as account_id,
+        $2::int as customer_id,
+        $3::int as account_type_id,
+        $4::int as account_status_id,
+        $5::numeric(15,2) as balance,
+        try_to_timestamp($6::varchar) as opening_date,
+        row_number() over (
+            partition by $1::int 
+            order by try_to_timestamp($6::varchar) desc
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_ACCOUNTS
+)
+
+select
+    account_id,
+    customer_id,
+    account_type_id,
+    account_status_id,
+    balance,
+    opening_date
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_accounts"} */;
+[0m08:48:32.680372 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.363 seconds
+[0m08:48:32.709024 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46dd2a9210>]}
+[0m08:48:32.710418 [info ] [Thread-2 (]: 1 of 9 OK created sql view model silver.stg_accounts ........................... [[32mSUCCESS 1[0m in 0.52s]
+[0m08:48:32.711445 [debug] [Thread-2 (]: Finished running node model.real_estate_pipeline.stg_accounts
+[0m08:48:32.712545 [debug] [Thread-2 (]: Began running node model.real_estate_pipeline.dim_accounts
+[0m08:48:32.713394 [info ] [Thread-2 (]: 5 of 9 START sql table model gold.dim_accounts ................................. [RUN]
+[0m08:48:32.714169 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_accounts, now model.real_estate_pipeline.dim_accounts)
+[0m08:48:32.714840 [debug] [Thread-2 (]: Began compiling node model.real_estate_pipeline.dim_accounts
+[0m08:48:32.717367 [debug] [Thread-2 (]: Writing injected SQL for node "model.real_estate_pipeline.dim_accounts"
+[0m08:48:32.731526 [debug] [Thread-2 (]: Began executing node model.real_estate_pipeline.dim_accounts
+[0m08:48:32.755811 [debug] [Thread-2 (]: Writing runtime sql for node "model.real_estate_pipeline.dim_accounts"
+[0m08:48:32.771146 [debug] [Thread-2 (]: Using snowflake connection "model.real_estate_pipeline.dim_accounts"
+[0m08:48:32.772030 [debug] [Thread-2 (]: On model.real_estate_pipeline.dim_accounts: create or replace transient table FINANCE_DW.gold.dim_accounts
+    
+    
+    
+    
+    
+
+    as (select
+    account_id,
+    customer_id,
+    account_type_id,
+    account_status_id,
+    balance,
+    opening_date
+from FINANCE_DW.silver.stg_accounts
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.dim_accounts"} */;
+[0m08:48:33.518027 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.211 seconds
+[0m08:48:33.522235 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ce700310>]}
+[0m08:48:33.523568 [info ] [Thread-3 (]: 2 of 9 OK created sql view model silver.stg_customers .......................... [[32mSUCCESS 1[0m in 1.34s]
+[0m08:48:33.524759 [debug] [Thread-3 (]: Finished running node model.real_estate_pipeline.stg_customers
+[0m08:48:33.525806 [debug] [Thread-3 (]: Began running node model.real_estate_pipeline.dim_customers
+[0m08:48:33.526849 [info ] [Thread-3 (]: 6 of 9 START sql table model gold.dim_customers ................................ [RUN]
+[0m08:48:33.527723 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_customers, now model.real_estate_pipeline.dim_customers)
+[0m08:48:33.528359 [debug] [Thread-3 (]: Began compiling node model.real_estate_pipeline.dim_customers
+[0m08:48:33.530499 [debug] [Thread-3 (]: Writing injected SQL for node "model.real_estate_pipeline.dim_customers"
+[0m08:48:33.542179 [debug] [Thread-3 (]: Began executing node model.real_estate_pipeline.dim_customers
+[0m08:48:33.544853 [debug] [Thread-3 (]: Writing runtime sql for node "model.real_estate_pipeline.dim_customers"
+[0m08:48:33.561077 [debug] [Thread-3 (]: Using snowflake connection "model.real_estate_pipeline.dim_customers"
+[0m08:48:33.561973 [debug] [Thread-3 (]: On model.real_estate_pipeline.dim_customers: create or replace transient table FINANCE_DW.gold.dim_customers
+    
+    
+    
+    
+    
+
+    as (with customers as (
+    select * from FINANCE_DW.silver.stg_customers
+),
+accounts as (
+    select 
+        customer_id,
+        count(account_id) as total_accounts,
+        sum(balance) as total_balance
+    from FINANCE_DW.silver.stg_accounts
+    group by customer_id
+)
+
+select
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    c.date_of_birth,
+    c.customer_type_id,
+    coalesce(a.total_accounts, 0) as total_accounts,
+    coalesce(a.total_balance, 0) as total_balance
+from customers c
+left join accounts a on c.customer_id = a.customer_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.dim_customers"} */;
+[0m08:48:34.032086 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.724 seconds
+[0m08:48:34.037601 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ce702c80>]}
+[0m08:48:34.039895 [info ] [Thread-5 (]: 4 of 9 OK created sql view model silver.stg_transactions ....................... [[32mSUCCESS 1[0m in 1.85s]
+[0m08:48:34.041978 [debug] [Thread-5 (]: Finished running node model.real_estate_pipeline.stg_transactions
+[0m08:48:34.043476 [debug] [Thread-5 (]: Began running node model.real_estate_pipeline.fct_transactions
+[0m08:48:34.044541 [info ] [Thread-5 (]: 7 of 9 START sql table model gold.fct_transactions ............................. [RUN]
+[0m08:48:34.045566 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_transactions, now model.real_estate_pipeline.fct_transactions)
+[0m08:48:34.046236 [debug] [Thread-5 (]: Began compiling node model.real_estate_pipeline.fct_transactions
+[0m08:48:34.048415 [debug] [Thread-5 (]: Writing injected SQL for node "model.real_estate_pipeline.fct_transactions"
+[0m08:48:34.077271 [debug] [Thread-5 (]: Began executing node model.real_estate_pipeline.fct_transactions
+[0m08:48:34.080259 [debug] [Thread-5 (]: Writing runtime sql for node "model.real_estate_pipeline.fct_transactions"
+[0m08:48:34.092860 [debug] [Thread-5 (]: Using snowflake connection "model.real_estate_pipeline.fct_transactions"
+[0m08:48:34.095125 [debug] [Thread-5 (]: On model.real_estate_pipeline.fct_transactions: create or replace transient table FINANCE_DW.gold.fct_transactions
+    
+    
+    
+    
+    
+
+    as (select
+    t.transaction_id,
+    t.account_origin_id,
+    t.account_destination_id,
+    a.customer_id as origin_customer_id,
+    t.transaction_type_id,
+    t.branch_id,
+    to_char(t.transaction_date::date, 'YYYYMMDD')::int as date_id,
+    t.transaction_date,
+    t.amount
+from FINANCE_DW.silver.stg_transactions t
+left join FINANCE_DW.silver.stg_accounts a on t.account_origin_id = a.account_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.fct_transactions"} */;
+[0m08:48:34.564531 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.255 seconds
+[0m08:48:34.570241 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ce70dcf0>]}
+[0m08:48:34.572290 [info ] [Thread-4 (]: 3 of 9 OK created sql view model silver.stg_loans .............................. [[32mSUCCESS 1[0m in 2.38s]
+[0m08:48:34.574926 [debug] [Thread-4 (]: Finished running node model.real_estate_pipeline.stg_loans
+[0m08:48:34.576419 [debug] [Thread-4 (]: Began running node model.real_estate_pipeline.dim_date
+[0m08:48:34.577246 [info ] [Thread-4 (]: 8 of 9 START sql table model gold.dim_date ..................................... [RUN]
+[0m08:48:34.578036 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_loans, now model.real_estate_pipeline.dim_date)
+[0m08:48:34.578717 [debug] [Thread-4 (]: Began compiling node model.real_estate_pipeline.dim_date
+[0m08:48:34.580680 [debug] [Thread-4 (]: Writing injected SQL for node "model.real_estate_pipeline.dim_date"
+[0m08:48:34.601600 [debug] [Thread-4 (]: Began executing node model.real_estate_pipeline.dim_date
+[0m08:48:34.604884 [debug] [Thread-4 (]: Writing runtime sql for node "model.real_estate_pipeline.dim_date"
+[0m08:48:34.630256 [debug] [Thread-4 (]: Using snowflake connection "model.real_estate_pipeline.dim_date"
+[0m08:48:34.631164 [debug] [Thread-4 (]: On model.real_estate_pipeline.dim_date: create or replace transient table FINANCE_DW.gold.dim_date
+    
+    
+    
+    
+    
+
+    as (with dates as (
+    select transaction_date::date as date_day from FINANCE_DW.silver.stg_transactions
+    union
+    select start_date::date as date_day from FINANCE_DW.silver.stg_loans
+    union
+    select opening_date::date as date_day from FINANCE_DW.silver.stg_accounts
+)
+
+select distinct
+    to_char(date_day, 'YYYYMMDD')::int as date_id,
+    date_day as full_date,
+    year(date_day) as year,
+    quarter(date_day) as quarter,
+    month(date_day) as month,
+    monthname(date_day) as month_name,
+    day(date_day) as day,
+    dayname(date_day) as day_of_week
+from dates
+where date_day is not null
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.dim_date"} */;
+[0m08:48:35.708291 [debug] [Thread-2 (]: SQL status: SUCCESS 1651 in 2.935 seconds
+[0m08:48:35.712734 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4715320a00>]}
+[0m08:48:35.714379 [info ] [Thread-2 (]: 5 of 9 OK created sql table model gold.dim_accounts ............................ [[32mSUCCESS 1651[0m in 3.00s]
+[0m08:48:35.715551 [debug] [Thread-2 (]: Finished running node model.real_estate_pipeline.dim_accounts
+[0m08:48:35.717391 [debug] [Thread-2 (]: Began running node model.real_estate_pipeline.fct_loans
+[0m08:48:35.719807 [info ] [Thread-2 (]: 9 of 9 START sql table model gold.fct_loans .................................... [RUN]
+[0m08:48:35.720607 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.dim_accounts, now model.real_estate_pipeline.fct_loans)
+[0m08:48:35.721222 [debug] [Thread-2 (]: Began compiling node model.real_estate_pipeline.fct_loans
+[0m08:48:35.723167 [debug] [Thread-2 (]: Writing injected SQL for node "model.real_estate_pipeline.fct_loans"
+[0m08:48:35.745023 [debug] [Thread-2 (]: Began executing node model.real_estate_pipeline.fct_loans
+[0m08:48:35.747621 [debug] [Thread-2 (]: Writing runtime sql for node "model.real_estate_pipeline.fct_loans"
+[0m08:48:35.774677 [debug] [Thread-2 (]: Using snowflake connection "model.real_estate_pipeline.fct_loans"
+[0m08:48:35.775576 [debug] [Thread-2 (]: On model.real_estate_pipeline.fct_loans: create or replace transient table FINANCE_DW.gold.fct_loans
+    
+    
+    
+    
+    
+
+    as (select
+    l.loan_id,
+    l.account_id,
+    a.customer_id,
+    l.loan_status_id,
+    to_char(l.start_date::date, 'YYYYMMDD')::int as date_id,
+    l.principal_amount,
+    l.interest_rate,
+    l.start_date,
+    l.estimated_end_date
+from FINANCE_DW.silver.stg_loans l
+left join FINANCE_DW.silver.stg_accounts a on l.account_id = a.account_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.fct_loans"} */;
+[0m08:48:35.793207 [debug] [Thread-3 (]: SQL status: SUCCESS 1100 in 2.230 seconds
+[0m08:48:35.796108 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ce70d780>]}
+[0m08:48:35.797357 [info ] [Thread-3 (]: 6 of 9 OK created sql table model gold.dim_customers ........................... [[32mSUCCESS 1100[0m in 2.27s]
+[0m08:48:35.798395 [debug] [Thread-3 (]: Finished running node model.real_estate_pipeline.dim_customers
+[0m08:48:36.027728 [debug] [Thread-5 (]: SQL status: SUCCESS 49500 in 1.928 seconds
+[0m08:48:36.032100 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ce7008e0>]}
+[0m08:48:36.033833 [info ] [Thread-5 (]: 7 of 9 OK created sql table model gold.fct_transactions ........................ [[32mSUCCESS 49500[0m in 1.99s]
+[0m08:48:36.034974 [debug] [Thread-5 (]: Finished running node model.real_estate_pipeline.fct_transactions
+[0m08:48:36.392382 [debug] [Thread-4 (]: SQL status: SUCCESS 2253 in 1.760 seconds
+[0m08:48:36.397255 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46ce70e290>]}
+[0m08:48:36.399120 [info ] [Thread-4 (]: 8 of 9 OK created sql table model gold.dim_date ................................ [[32mSUCCESS 2253[0m in 1.82s]
+[0m08:48:36.400309 [debug] [Thread-4 (]: Finished running node model.real_estate_pipeline.dim_date
+[0m08:48:36.883498 [debug] [Thread-2 (]: SQL status: SUCCESS 330 in 1.107 seconds
+[0m08:48:36.888370 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48dc18b-ff0b-4df5-b4ed-59c176913e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46dd26b4f0>]}
+[0m08:48:36.890432 [info ] [Thread-2 (]: 9 of 9 OK created sql table model gold.fct_loans ............................... [[32mSUCCESS 330[0m in 1.17s]
+[0m08:48:36.891484 [debug] [Thread-2 (]: Finished running node model.real_estate_pipeline.fct_loans
+[0m08:48:36.893625 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:48:36.894496 [debug] [MainThread]: Connection 'model.real_estate_pipeline.fct_loans' was left open.
+[0m08:48:36.895209 [debug] [MainThread]: On model.real_estate_pipeline.fct_loans: Close
+[0m08:48:37.070458 [debug] [MainThread]: Connection 'model.real_estate_pipeline.dim_customers' was left open.
+[0m08:48:37.073173 [debug] [MainThread]: On model.real_estate_pipeline.dim_customers: Close
+[0m08:48:37.218569 [debug] [MainThread]: Connection 'model.real_estate_pipeline.dim_date' was left open.
+[0m08:48:37.221784 [debug] [MainThread]: On model.real_estate_pipeline.dim_date: Close
+[0m08:48:37.410175 [debug] [MainThread]: Connection 'model.real_estate_pipeline.fct_transactions' was left open.
+[0m08:48:37.412245 [debug] [MainThread]: On model.real_estate_pipeline.fct_transactions: Close
+[0m08:48:37.559776 [info ] [MainThread]: 
+[0m08:48:37.563177 [info ] [MainThread]: Finished running 5 table models, 4 view models in 0 hours 0 minutes and 9.97 seconds (9.97s).
+[0m08:48:37.565625 [debug] [MainThread]: Command end result
+[0m08:48:37.609779 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:48:37.613671 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:48:37.617382 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:48:37.644475 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m08:48:37.645218 [info ] [MainThread]: 
+[0m08:48:37.645976 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:48:37.646690 [info ] [MainThread]: 
+[0m08:48:37.647337 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[0m08:48:37.650147 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 12.286814, "process_in_blocks": "69048", "process_kernel_time": 1.543647, "process_mem_max_rss": "233952", "process_out_blocks": "16080", "process_user_time": 4.606759}
+[0m08:48:37.650948 [debug] [MainThread]: Command `dbt run` succeeded at 08:48:37.650847 after 12.29 seconds
+[0m08:48:37.651569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47155b9f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e46dd217970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4713e995a0>]}
+[0m08:48:37.652295 [debug] [MainThread]: Flushing usage events
+[0m08:48:38.386594 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:48:40.909482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b3661dfc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b34eba740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b34eba6e0>]}
+
+
+============================== 08:48:40.913830 | 30d0bbcd-62fb-4158-a890-33d85acae487 ==============================
+[0m08:48:40.913830 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:48:40.914695 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'printer_width': '80', 'log_path': '/opt/airflow/dbt_project/logs', 'empty': 'None', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'profiles_dir': '/opt/airflow/dbt_project', 'warn_error': 'None', 'debug': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt test', 'quiet': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None'}
+[0m08:48:41.430205 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:48:41.431417 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:48:41.434434 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:48:41.585999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30d0bbcd-62fb-4158-a890-33d85acae487', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b34ce2650>]}
+[0m08:48:41.631602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30d0bbcd-62fb-4158-a890-33d85acae487', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b351bce50>]}
+[0m08:48:41.633265 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:48:41.709035 [debug] [MainThread]: checksum: 17b8c0eed372bdc76158915a5b86153b95ebcdfebef695d6713d3c569800f71e, vars: {}, profile: dbt_project, target: dev, version: 1.12.0
+[0m08:48:42.017315 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:48:42.018309 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:48:42.019199 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:48:42.027887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30d0bbcd-62fb-4158-a890-33d85acae487', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720afeecdf30>]}
+[0m08:48:42.170899 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:48:42.188434 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:48:42.199280 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:48:42.239288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30d0bbcd-62fb-4158-a890-33d85acae487', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720afec25420>]}
+[0m08:48:42.240333 [info ] [MainThread]: Found 9 models, 21 data tests, 4 sources, 546 macros
+[0m08:48:42.241099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30d0bbcd-62fb-4158-a890-33d85acae487', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720afec24c70>]}
+[0m08:48:42.245613 [info ] [MainThread]: 
+[0m08:48:42.246378 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:48:42.247076 [info ] [MainThread]: 
+[0m08:48:42.247874 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:48:42.252371 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW_gold'
+[0m08:48:42.253097 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW_silver'
+[0m08:48:42.268099 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:48:42.269221 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:48:42.270022 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show objects in FINANCE_DW.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */;
+[0m08:48:42.270847 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show objects in FINANCE_DW.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */;
+[0m08:48:42.271514 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:48:42.272094 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:48:42.777732 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.505 seconds
+[0m08:48:42.779735 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.508 seconds
+[0m08:48:42.786853 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:48:42.790370 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:48:42.791996 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show user functions in FINANCE_DW.silver
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */
+[0m08:48:42.793299 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show user functions in FINANCE_DW.gold
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */
+[0m08:48:42.881916 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.086 seconds
+[0m08:48:42.885908 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.091 seconds
+[0m08:48:42.888215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30d0bbcd-62fb-4158-a890-33d85acae487', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b34f70250>]}
+[0m08:48:42.892144 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:48:42.892515 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:48:42.893033 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:48:42.893363 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:48:42.894054 [info ] [Thread-2 (]: 1 of 21 START test not_null_dim_accounts_account_id ............................ [RUN]
+[0m08:48:42.895126 [info ] [Thread-3 (]: 2 of 21 START test not_null_dim_customers_customer_id .......................... [RUN]
+[0m08:48:42.896046 [info ] [Thread-4 (]: 3 of 21 START test not_null_dim_date_date_id ................................... [RUN]
+[0m08:48:42.896685 [info ] [Thread-5 (]: 4 of 21 START test not_null_fct_loans_loan_id .................................. [RUN]
+[0m08:48:42.897393 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_silver, now test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841)
+[0m08:48:42.898136 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_gold, now test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m08:48:42.898879 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.real_estate_pipeline.not_null_dim_date_date_id.3077875806'
+[0m08:48:42.899601 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330'
+[0m08:48:42.900154 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:48:42.900702 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:48:42.902017 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:48:42.902702 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:48:42.915835 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"
+[0m08:48:42.920330 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m08:48:42.925573 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"
+[0m08:48:42.930229 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"
+[0m08:48:42.952535 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:48:42.953014 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:48:42.969901 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"
+[0m08:48:42.972106 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m08:48:42.972615 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:48:42.973000 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:48:42.975686 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"
+[0m08:48:42.977670 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"
+[0m08:48:42.994595 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m08:48:42.995485 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"
+[0m08:48:42.997497 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"
+[0m08:48:42.998866 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from FINANCE_DW.gold.dim_customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"} */
+[0m08:48:43.004745 [debug] [Thread-5 (]: On test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_id
+from FINANCE_DW.gold.fct_loans
+where loan_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"} */
+[0m08:48:43.005416 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"
+[0m08:48:43.007488 [debug] [Thread-4 (]: On test.real_estate_pipeline.not_null_dim_date_date_id.3077875806: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_id
+from FINANCE_DW.gold.dim_date
+where date_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"} */
+[0m08:48:43.009501 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m08:48:43.010461 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select account_id
+from FINANCE_DW.gold.dim_accounts
+where account_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"} */
+[0m08:48:43.011209 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m08:48:43.224314 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.216 seconds
+[0m08:48:43.225150 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.212 seconds
+[0m08:48:43.232939 [info ] [Thread-3 (]: 2 of 21 PASS not_null_dim_customers_customer_id ................................ [[32mPASS[0m in 0.33s]
+[0m08:48:43.234790 [info ] [Thread-2 (]: 1 of 21 PASS not_null_dim_accounts_account_id .................................. [[32mPASS[0m in 0.34s]
+[0m08:48:43.235751 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:48:43.236530 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:48:43.237270 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:48:43.238010 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:48:43.238725 [info ] [Thread-3 (]: 5 of 21 START test not_null_fct_transactions_transaction_id .................... [RUN]
+[0m08:48:43.239453 [info ] [Thread-2 (]: 6 of 21 START test not_null_stg_accounts_account_id ............................ [RUN]
+[0m08:48:43.240300 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d, now test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa)
+[0m08:48:43.241099 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841, now test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108)
+[0m08:48:43.242130 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:48:43.243264 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:48:43.248860 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"
+[0m08:48:43.254894 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"
+[0m08:48:43.279805 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:48:43.281172 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:48:43.282916 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"
+[0m08:48:43.285791 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"
+[0m08:48:43.304063 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"
+[0m08:48:43.304755 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"
+[0m08:48:43.305584 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from FINANCE_DW.gold.fct_transactions
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"} */
+[0m08:48:43.308950 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select account_id
+from FINANCE_DW.silver.stg_accounts
+where account_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"} */
+[0m08:48:43.471670 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.159 seconds
+[0m08:48:43.490193 [info ] [Thread-2 (]: 6 of 21 PASS not_null_stg_accounts_account_id .................................. [[32mPASS[0m in 0.25s]
+[0m08:48:43.508283 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:48:43.513483 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:48:43.516525 [info ] [Thread-2 (]: 7 of 21 START test not_null_stg_accounts_customer_id ........................... [RUN]
+[0m08:48:43.527991 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108, now test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3)
+[0m08:48:43.535861 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:48:43.548459 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"
+[0m08:48:43.562706 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:48:43.564611 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"
+[0m08:48:43.565841 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.255 seconds
+[0m08:48:43.569050 [info ] [Thread-3 (]: 5 of 21 PASS not_null_fct_transactions_transaction_id .......................... [[32mPASS[0m in 0.33s]
+[0m08:48:43.570514 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:48:43.572417 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:48:43.573816 [info ] [Thread-3 (]: 8 of 21 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m08:48:43.575210 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa, now test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m08:48:43.576474 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:48:43.581565 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m08:48:43.585682 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"
+[0m08:48:43.590312 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from FINANCE_DW.silver.stg_accounts
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"} */
+[0m08:48:43.605640 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:48:43.608200 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m08:48:43.619248 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m08:48:43.620072 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from FINANCE_DW.silver.stg_customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+[0m08:48:43.730384 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m08:48:43.736540 [info ] [Thread-2 (]: 7 of 21 PASS not_null_stg_accounts_customer_id ................................. [[32mPASS[0m in 0.21s]
+[0m08:48:43.738991 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:48:43.741053 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:48:43.742505 [info ] [Thread-2 (]: 9 of 21 START test not_null_stg_loans_loan_id .................................. [RUN]
+[0m08:48:43.743694 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3, now test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c)
+[0m08:48:43.744663 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:48:43.749897 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"
+[0m08:48:43.759634 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.139 seconds
+[0m08:48:43.762595 [info ] [Thread-3 (]: 8 of 21 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.19s]
+[0m08:48:43.764267 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:48:43.766010 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:48:43.766377 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:48:43.769523 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"
+[0m08:48:43.773402 [info ] [Thread-3 (]: 10 of 21 START test not_null_stg_transactions_transaction_id ................... [RUN]
+[0m08:48:43.780511 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4)
+[0m08:48:43.782157 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:48:43.787497 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"
+[0m08:48:43.812829 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"
+[0m08:48:43.814155 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_id
+from FINANCE_DW.silver.stg_loans
+where loan_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"} */
+[0m08:48:43.814667 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:48:43.821325 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"
+[0m08:48:43.837336 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"
+[0m08:48:43.838209 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from FINANCE_DW.silver.stg_transactions
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"} */
+[0m08:48:43.956105 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m08:48:43.961930 [info ] [Thread-2 (]: 9 of 21 PASS not_null_stg_loans_loan_id ........................................ [[32mPASS[0m in 0.22s]
+[0m08:48:43.963670 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:48:43.964865 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:48:43.966023 [info ] [Thread-2 (]: 11 of 21 START test relationships_fct_loans_customer_id__customer_id__ref_dim_customers_  [RUN]
+[0m08:48:43.967192 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c, now test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a)
+[0m08:48:43.968021 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:48:43.980315 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"
+[0m08:48:43.995029 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:48:43.997205 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"
+[0m08:48:44.008745 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"
+[0m08:48:44.010088 [debug] [Thread-2 (]: On test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from FINANCE_DW.gold.fct_loans
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from FINANCE_DW.gold.dim_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"} */
+[0m08:48:44.097657 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.258 seconds
+[0m08:48:44.100292 [info ] [Thread-3 (]: 10 of 21 PASS not_null_stg_transactions_transaction_id ......................... [[32mPASS[0m in 0.32s]
+[0m08:48:44.101649 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:48:44.102567 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:48:44.103382 [info ] [Thread-3 (]: 12 of 21 START test relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_  [RUN]
+[0m08:48:44.104287 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4, now test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691)
+[0m08:48:44.104928 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:48:44.112497 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"
+[0m08:48:44.134552 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:48:44.139841 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"
+[0m08:48:44.161142 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"
+[0m08:48:44.161906 [debug] [Thread-3 (]: On test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select origin_customer_id as from_field
+    from FINANCE_DW.gold.fct_transactions
+    where origin_customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from FINANCE_DW.gold.dim_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"} */
+[0m08:48:44.276351 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.267 seconds
+[0m08:48:44.279333 [info ] [Thread-5 (]: 4 of 21 PASS not_null_fct_loans_loan_id ........................................ [[32mPASS[0m in 1.38s]
+[0m08:48:44.280782 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:48:44.281798 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:48:44.283020 [info ] [Thread-5 (]: 13 of 21 START test unique_dim_accounts_account_id ............................. [RUN]
+[0m08:48:44.284197 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330, now test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc)
+[0m08:48:44.284888 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:48:44.291512 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"
+[0m08:48:44.314238 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:48:44.319780 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"
+[0m08:48:44.345214 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"
+[0m08:48:44.348927 [debug] [Thread-5 (]: On test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    account_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.dim_accounts
+where account_id is not null
+group by account_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"} */
+[0m08:48:44.357204 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.346 seconds
+[0m08:48:44.359342 [info ] [Thread-4 (]: 3 of 21 PASS not_null_dim_date_date_id ......................................... [[32mPASS[0m in 1.46s]
+[0m08:48:44.360297 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:48:44.361113 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:48:44.361833 [info ] [Thread-4 (]: 14 of 21 START test unique_dim_customers_customer_id ........................... [RUN]
+[0m08:48:44.362587 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_dim_date_date_id.3077875806, now test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m08:48:44.363331 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:48:44.364491 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.354 seconds
+[0m08:48:44.369643 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m08:48:44.372603 [info ] [Thread-2 (]: 11 of 21 PASS relationships_fct_loans_customer_id__customer_id__ref_dim_customers_  [[32mPASS[0m in 0.41s]
+[0m08:48:44.373897 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:48:44.374549 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:48:44.375798 [info ] [Thread-2 (]: 15 of 21 START test unique_dim_date_date_id .................................... [RUN]
+[0m08:48:44.376582 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a, now test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d)
+[0m08:48:44.377192 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:48:44.382297 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"
+[0m08:48:44.385576 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.223 seconds
+[0m08:48:44.387972 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:48:44.387656 [info ] [Thread-3 (]: 12 of 21 PASS relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_  [[32mPASS[0m in 0.28s]
+[0m08:48:44.391116 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m08:48:44.392660 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:48:44.394282 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:48:44.395262 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:48:44.397999 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"
+[0m08:48:44.400185 [info ] [Thread-3 (]: 16 of 21 START test unique_fct_loans_loan_id ................................... [RUN]
+[0m08:48:44.404731 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691, now test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329)
+[0m08:48:44.409070 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:48:44.414739 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"
+[0m08:48:44.419983 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m08:48:44.423943 [debug] [Thread-4 (]: On test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.dim_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"} */
+[0m08:48:44.434786 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"
+[0m08:48:44.436281 [debug] [Thread-2 (]: On test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    date_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.dim_date
+where date_id is not null
+group by date_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"} */
+[0m08:48:44.440564 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:48:44.443862 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"
+[0m08:48:44.459133 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"
+[0m08:48:44.460000 [debug] [Thread-3 (]: On test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    loan_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.fct_loans
+where loan_id is not null
+group by loan_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"} */
+[0m08:48:44.548983 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.119 seconds
+[0m08:48:44.552296 [info ] [Thread-4 (]: 14 of 21 PASS unique_dim_customers_customer_id ................................. [[32mPASS[0m in 0.19s]
+[0m08:48:44.553709 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:48:44.554744 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:48:44.555758 [info ] [Thread-4 (]: 17 of 21 START test unique_fct_transactions_transaction_id ..................... [RUN]
+[0m08:48:44.556753 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd, now test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53)
+[0m08:48:44.557405 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:48:44.562678 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"
+[0m08:48:44.563782 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.212 seconds
+[0m08:48:44.565856 [info ] [Thread-5 (]: 13 of 21 PASS unique_dim_accounts_account_id ................................... [[32mPASS[0m in 0.28s]
+[0m08:48:44.567299 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:48:44.568041 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:48:44.569122 [info ] [Thread-5 (]: 18 of 21 START test unique_stg_accounts_account_id ............................. [RUN]
+[0m08:48:44.570340 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc, now test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79)
+[0m08:48:44.571897 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:48:44.578070 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"
+[0m08:48:44.582607 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m08:48:44.585478 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:48:44.585166 [info ] [Thread-3 (]: 16 of 21 PASS unique_fct_loans_loan_id ......................................... [[32mPASS[0m in 0.18s]
+[0m08:48:44.588681 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"
+[0m08:48:44.590602 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:48:44.594199 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:48:44.595584 [info ] [Thread-3 (]: 19 of 21 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m08:48:44.596951 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329, now test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada)
+[0m08:48:44.597350 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:48:44.597973 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:48:44.600015 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"
+[0m08:48:44.606065 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"
+[0m08:48:44.614004 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"
+[0m08:48:44.615011 [debug] [Thread-4 (]: On test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    transaction_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.fct_transactions
+where transaction_id is not null
+group by transaction_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"} */
+[0m08:48:44.627478 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"
+[0m08:48:44.627951 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:48:44.628700 [debug] [Thread-5 (]: On test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    account_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_accounts
+where account_id is not null
+group by account_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"} */
+[0m08:48:44.630822 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"
+[0m08:48:44.644335 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"
+[0m08:48:44.645188 [debug] [Thread-3 (]: On test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"} */
+[0m08:48:44.652653 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m08:48:44.654883 [info ] [Thread-2 (]: 15 of 21 PASS unique_dim_date_date_id .......................................... [[32mPASS[0m in 0.28s]
+[0m08:48:44.656156 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:48:44.656823 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:48:44.657486 [info ] [Thread-2 (]: 20 of 21 START test unique_stg_loans_loan_id ................................... [RUN]
+[0m08:48:44.658305 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d, now test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63)
+[0m08:48:44.658991 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:48:44.664176 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"
+[0m08:48:44.677751 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:48:44.679746 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"
+[0m08:48:44.693299 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"
+[0m08:48:44.694194 [debug] [Thread-2 (]: On test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    loan_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_loans
+where loan_id is not null
+group by loan_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"} */
+[0m08:48:44.753732 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m08:48:44.756171 [info ] [Thread-4 (]: 17 of 21 PASS unique_fct_transactions_transaction_id ........................... [[32mPASS[0m in 0.20s]
+[0m08:48:44.757238 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:48:44.759019 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:48:44.760246 [info ] [Thread-4 (]: 21 of 21 START test unique_stg_transactions_transaction_id ..................... [RUN]
+[0m08:48:44.761835 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53, now test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396)
+[0m08:48:44.762671 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:48:44.767777 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"
+[0m08:48:44.778956 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:48:44.780916 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"
+[0m08:48:44.791770 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.160 seconds
+[0m08:48:44.793805 [info ] [Thread-5 (]: 18 of 21 PASS unique_stg_accounts_account_id ................................... [[32mPASS[0m in 0.22s]
+[0m08:48:44.794821 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:48:44.803428 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"
+[0m08:48:44.804272 [debug] [Thread-4 (]: On test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    transaction_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_transactions
+where transaction_id is not null
+group by transaction_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"} */
+[0m08:48:44.838348 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.143 seconds
+[0m08:48:44.842541 [info ] [Thread-2 (]: 20 of 21 PASS unique_stg_loans_loan_id ......................................... [[32mPASS[0m in 0.18s]
+[0m08:48:44.843774 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:48:44.929830 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.284 seconds
+[0m08:48:44.932777 [info ] [Thread-3 (]: 19 of 21 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.34s]
+[0m08:48:44.933832 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:48:45.043317 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.238 seconds
+[0m08:48:45.047929 [info ] [Thread-4 (]: 21 of 21 PASS unique_stg_transactions_transaction_id ........................... [[32mPASS[0m in 0.29s]
+[0m08:48:45.050031 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:48:45.053142 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:48:45.057147 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada' was left open.
+[0m08:48:45.058074 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada: Close
+[0m08:48:45.186549 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63' was left open.
+[0m08:48:45.187862 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63: Close
+[0m08:48:45.328801 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396' was left open.
+[0m08:48:45.331524 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396: Close
+[0m08:48:45.464192 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79' was left open.
+[0m08:48:45.465419 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79: Close
+[0m08:48:45.597013 [info ] [MainThread]: 
+[0m08:48:45.599749 [info ] [MainThread]: Finished running 21 data tests in 0 hours 0 minutes and 3.35 seconds (3.35s).
+[0m08:48:45.604657 [debug] [MainThread]: Command end result
+[0m08:48:45.652437 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:48:45.658562 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:48:45.671931 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:48:45.682684 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m08:48:45.683364 [info ] [MainThread]: 
+[0m08:48:45.684167 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:48:45.684912 [info ] [MainThread]: 
+[0m08:48:45.685572 [info ] [MainThread]: Done. PASS=21 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=21
+[0m08:48:45.686732 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 4.842281, "process_in_blocks": "624", "process_kernel_time": 1.305768, "process_mem_max_rss": "228616", "process_out_blocks": "16", "process_user_time": 3.175119}
+[0m08:48:45.687467 [debug] [MainThread]: Command `dbt test` succeeded at 08:48:45.687338 after 4.84 seconds
+[0m08:48:45.688158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b3661dfc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720b34ce2650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720afeec29b0>]}
+[0m08:48:45.688914 [debug] [MainThread]: Flushing usage events
+[0m08:48:46.223742 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:48:58.112876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa8893f5fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa887cb6590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa887cb6530>]}
+
+
+============================== 08:48:58.118700 | 219cf14b-6be2-4ad7-86e2-e5121c8dba57 ==============================
+[0m08:48:58.118700 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:48:58.121099 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'fail_fast': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'hints_enabled': 'True', 'use_colors': 'True', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'debug': 'False', 'target_path': 'None', 'invocation_command': 'dbt run', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'profiles_dir': '/opt/airflow/dbt_project', 'log_path': '/opt/airflow/dbt_project/logs', 'use_experimental_parser': 'False', 'warn_error': 'None', 'no_print': 'None', 'log_format': 'default'}
+[0m08:48:58.650590 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:48:58.652074 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:48:58.652895 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:48:58.812190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa887cd62f0>]}
+[0m08:48:58.860826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa888737340>]}
+[0m08:48:58.862915 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:48:58.948480 [debug] [MainThread]: checksum: 17b8c0eed372bdc76158915a5b86153b95ebcdfebef695d6713d3c569800f71e, vars: {}, profile: dbt_project, target: dev, version: 1.12.0
+[0m08:48:59.198209 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:48:59.199011 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:48:59.199712 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:48:59.207487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa851f95f30>]}
+[0m08:48:59.345213 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:48:59.367395 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:48:59.382757 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:48:59.400235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa851c2c910>]}
+[0m08:48:59.401142 [info ] [MainThread]: Found 9 models, 21 data tests, 4 sources, 546 macros
+[0m08:48:59.401929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa851c2d210>]}
+[0m08:48:59.404032 [info ] [MainThread]: 
+[0m08:48:59.404960 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:48:59.406132 [info ] [MainThread]: 
+[0m08:48:59.407125 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:48:59.411701 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW'
+[0m08:48:59.412368 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW'
+[0m08:48:59.424065 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW"
+[0m08:48:59.425667 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW"
+[0m08:48:59.426623 [debug] [ThreadPool]: On list_FINANCE_DW: show terse schemas in database FINANCE_DW
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW"} */
+[0m08:48:59.427348 [debug] [ThreadPool]: On list_FINANCE_DW: show terse schemas in database FINANCE_DW
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW"} */
+[0m08:48:59.427966 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:48:59.428488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:49:00.782673 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.354 seconds
+[0m08:49:00.785773 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.358 seconds
+[0m08:49:00.789183 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FINANCE_DW, now list_FINANCE_DW_gold)
+[0m08:49:00.789770 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_FINANCE_DW, now list_FINANCE_DW_silver)
+[0m08:49:00.799079 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:49:00.801262 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:49:00.802680 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show objects in FINANCE_DW.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */;
+[0m08:49:00.807229 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show objects in FINANCE_DW.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */;
+[0m08:49:00.950614 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.139 seconds
+[0m08:49:00.952646 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.144 seconds
+[0m08:49:00.960020 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:49:00.962130 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:49:00.962818 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show user functions in FINANCE_DW.silver
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */
+[0m08:49:00.963428 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show user functions in FINANCE_DW.gold
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */
+[0m08:49:01.079659 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.116 seconds
+[0m08:49:01.085965 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.121 seconds
+[0m08:49:01.091166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa852907a00>]}
+[0m08:49:01.097534 [debug] [Thread-2 (]: Began running node model.real_estate_pipeline.stg_accounts
+[0m08:49:01.098199 [debug] [Thread-3 (]: Began running node model.real_estate_pipeline.stg_customers
+[0m08:49:01.098852 [debug] [Thread-4 (]: Began running node model.real_estate_pipeline.stg_loans
+[0m08:49:01.099238 [debug] [Thread-5 (]: Began running node model.real_estate_pipeline.stg_transactions
+[0m08:49:01.100234 [info ] [Thread-2 (]: 1 of 9 START sql view model silver.stg_accounts ................................ [RUN]
+[0m08:49:01.101183 [info ] [Thread-3 (]: 2 of 9 START sql view model silver.stg_customers ............................... [RUN]
+[0m08:49:01.102645 [info ] [Thread-4 (]: 3 of 9 START sql view model silver.stg_loans ................................... [RUN]
+[0m08:49:01.103527 [info ] [Thread-5 (]: 4 of 9 START sql view model silver.stg_transactions ............................ [RUN]
+[0m08:49:01.104604 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_gold, now model.real_estate_pipeline.stg_accounts)
+[0m08:49:01.106188 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_silver, now model.real_estate_pipeline.stg_customers)
+[0m08:49:01.107748 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.real_estate_pipeline.stg_loans'
+[0m08:49:01.108693 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.real_estate_pipeline.stg_transactions'
+[0m08:49:01.109823 [debug] [Thread-2 (]: Began compiling node model.real_estate_pipeline.stg_accounts
+[0m08:49:01.111158 [debug] [Thread-3 (]: Began compiling node model.real_estate_pipeline.stg_customers
+[0m08:49:01.111996 [debug] [Thread-4 (]: Began compiling node model.real_estate_pipeline.stg_loans
+[0m08:49:01.112712 [debug] [Thread-5 (]: Began compiling node model.real_estate_pipeline.stg_transactions
+[0m08:49:01.118388 [debug] [Thread-2 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_accounts"
+[0m08:49:01.120741 [debug] [Thread-3 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_customers"
+[0m08:49:01.122760 [debug] [Thread-4 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_loans"
+[0m08:49:01.124698 [debug] [Thread-5 (]: Writing injected SQL for node "model.real_estate_pipeline.stg_transactions"
+[0m08:49:01.131473 [debug] [Thread-3 (]: Began executing node model.real_estate_pipeline.stg_customers
+[0m08:49:01.132076 [debug] [Thread-2 (]: Began executing node model.real_estate_pipeline.stg_accounts
+[0m08:49:01.138307 [debug] [Thread-4 (]: Began executing node model.real_estate_pipeline.stg_loans
+[0m08:49:01.138960 [debug] [Thread-5 (]: Began executing node model.real_estate_pipeline.stg_transactions
+[0m08:49:01.175663 [debug] [Thread-3 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_customers"
+[0m08:49:01.176711 [debug] [Thread-2 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_accounts"
+[0m08:49:01.179732 [debug] [Thread-4 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_loans"
+[0m08:49:01.182036 [debug] [Thread-5 (]: Writing runtime sql for node "model.real_estate_pipeline.stg_transactions"
+[0m08:49:01.190025 [debug] [Thread-3 (]: Using snowflake connection "model.real_estate_pipeline.stg_customers"
+[0m08:49:01.191164 [debug] [Thread-4 (]: Using snowflake connection "model.real_estate_pipeline.stg_loans"
+[0m08:49:01.192190 [debug] [Thread-3 (]: On model.real_estate_pipeline.stg_customers: create or replace   view FINANCE_DW.silver.stg_customers
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as customer_id,
+        trim($2)::varchar as first_name,
+        trim($3)::varchar as last_name,
+        try_to_timestamp(nullif(trim($4::varchar), 'NaT')) as date_of_birth,
+        $5::int as address_id,
+        $6::int as customer_type_id,
+        row_number() over (
+            partition by $1::int 
+            order by $1::int
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_CUSTOMERS
+)
+
+select
+    customer_id,
+    first_name,
+    last_name,
+    date_of_birth,
+    address_id,
+    customer_type_id
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_customers"} */;
+[0m08:49:01.193028 [debug] [Thread-5 (]: Using snowflake connection "model.real_estate_pipeline.stg_transactions"
+[0m08:49:01.194283 [debug] [Thread-4 (]: On model.real_estate_pipeline.stg_loans: create or replace   view FINANCE_DW.silver.stg_loans
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as loan_id,
+        $2::int as account_id,
+        $3::int as loan_status_id,
+        $4::numeric(15,2) as principal_amount,
+        $5::numeric(5,4) as interest_rate,
+        $6::timestamp as start_date,
+        $7::timestamp as estimated_end_date,
+        row_number() over (
+            partition by $1::int 
+            order by $6::timestamp desc
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_LOANS
+)
+
+select
+    loan_id,
+    account_id,
+    loan_status_id,
+    principal_amount,
+    interest_rate,
+    start_date,
+    estimated_end_date
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_loans"} */;
+[0m08:49:01.195676 [debug] [Thread-2 (]: Using snowflake connection "model.real_estate_pipeline.stg_accounts"
+[0m08:49:01.198156 [debug] [Thread-5 (]: On model.real_estate_pipeline.stg_transactions: create or replace   view FINANCE_DW.silver.stg_transactions
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as transaction_id,
+        $2::int as account_origin_id,
+        $3::int as account_destination_id,
+        $4::int as transaction_type_id,
+        $5::numeric(15,2) as amount,
+        $6::timestamp as transaction_date,
+        $7::int as branch_id,
+        trim($8)::varchar as description,
+        row_number() over (
+            partition by $1::int 
+            order by $6::timestamp desc
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_TRANSACTIONS
+)
+
+select
+    transaction_id,
+    account_origin_id,
+    account_destination_id,
+    transaction_type_id,
+    amount,
+    transaction_date,
+    branch_id,
+    description
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_transactions"} */;
+[0m08:49:01.199328 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m08:49:01.200485 [debug] [Thread-2 (]: On model.real_estate_pipeline.stg_accounts: create or replace   view FINANCE_DW.silver.stg_accounts
+  
+  
+  
+  
+  as (
+    with source as (
+    select
+        $1::int as account_id,
+        $2::int as customer_id,
+        $3::int as account_type_id,
+        $4::int as account_status_id,
+        $5::numeric(15,2) as balance,
+        try_to_timestamp($6::varchar) as opening_date,
+        row_number() over (
+            partition by $1::int 
+            order by try_to_timestamp($6::varchar) desc
+        ) as rn
+    from FINANCE_DW.BRONZE.RAW_ACCOUNTS
+)
+
+select
+    account_id,
+    customer_id,
+    account_type_id,
+    account_status_id,
+    balance,
+    opening_date
+from source
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.stg_accounts"} */;
+[0m08:49:01.201461 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m08:49:01.457775 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.261 seconds
+[0m08:49:01.458894 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.253 seconds
+[0m08:49:01.478386 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa887cd5480>]}
+[0m08:49:01.480558 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa84270cb20>]}
+[0m08:49:01.481984 [info ] [Thread-3 (]: 2 of 9 OK created sql view model silver.stg_customers .......................... [[32mSUCCESS 1[0m in 0.37s]
+[0m08:49:01.483279 [info ] [Thread-2 (]: 1 of 9 OK created sql view model silver.stg_accounts ........................... [[32mSUCCESS 1[0m in 0.38s]
+[0m08:49:01.486281 [debug] [Thread-3 (]: Finished running node model.real_estate_pipeline.stg_customers
+[0m08:49:01.487510 [debug] [Thread-2 (]: Finished running node model.real_estate_pipeline.stg_accounts
+[0m08:49:01.489557 [debug] [Thread-3 (]: Began running node model.real_estate_pipeline.dim_accounts
+[0m08:49:01.489968 [debug] [Thread-2 (]: Began running node model.real_estate_pipeline.dim_customers
+[0m08:49:01.490778 [info ] [Thread-3 (]: 5 of 9 START sql table model gold.dim_accounts ................................. [RUN]
+[0m08:49:01.491779 [info ] [Thread-2 (]: 6 of 9 START sql table model gold.dim_customers ................................ [RUN]
+[0m08:49:01.492822 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_customers, now model.real_estate_pipeline.dim_accounts)
+[0m08:49:01.495634 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_accounts, now model.real_estate_pipeline.dim_customers)
+[0m08:49:01.497460 [debug] [Thread-3 (]: Began compiling node model.real_estate_pipeline.dim_accounts
+[0m08:49:01.498597 [debug] [Thread-2 (]: Began compiling node model.real_estate_pipeline.dim_customers
+[0m08:49:01.500625 [debug] [Thread-3 (]: Writing injected SQL for node "model.real_estate_pipeline.dim_accounts"
+[0m08:49:01.502780 [debug] [Thread-2 (]: Writing injected SQL for node "model.real_estate_pipeline.dim_customers"
+[0m08:49:01.509874 [debug] [Thread-3 (]: Began executing node model.real_estate_pipeline.dim_accounts
+[0m08:49:01.517199 [debug] [Thread-2 (]: Began executing node model.real_estate_pipeline.dim_customers
+[0m08:49:01.530817 [debug] [Thread-3 (]: Writing runtime sql for node "model.real_estate_pipeline.dim_accounts"
+[0m08:49:01.532662 [debug] [Thread-2 (]: Writing runtime sql for node "model.real_estate_pipeline.dim_customers"
+[0m08:49:01.541716 [debug] [Thread-3 (]: Using snowflake connection "model.real_estate_pipeline.dim_accounts"
+[0m08:49:01.543255 [debug] [Thread-3 (]: On model.real_estate_pipeline.dim_accounts: create or replace transient table FINANCE_DW.gold.dim_accounts
+    
+    
+    
+    
+    
+
+    as (select
+    account_id,
+    customer_id,
+    account_type_id,
+    account_status_id,
+    balance,
+    opening_date
+from FINANCE_DW.silver.stg_accounts
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.dim_accounts"} */;
+[0m08:49:01.545001 [debug] [Thread-2 (]: Using snowflake connection "model.real_estate_pipeline.dim_customers"
+[0m08:49:01.547072 [debug] [Thread-2 (]: On model.real_estate_pipeline.dim_customers: create or replace transient table FINANCE_DW.gold.dim_customers
+    
+    
+    
+    
+    
+
+    as (with customers as (
+    select * from FINANCE_DW.silver.stg_customers
+),
+accounts as (
+    select 
+        customer_id,
+        count(account_id) as total_accounts,
+        sum(balance) as total_balance
+    from FINANCE_DW.silver.stg_accounts
+    group by customer_id
+)
+
+select
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    c.date_of_birth,
+    c.customer_type_id,
+    coalesce(a.total_accounts, 0) as total_accounts,
+    coalesce(a.total_balance, 0) as total_balance
+from customers c
+left join accounts a on c.customer_id = a.customer_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.dim_customers"} */;
+[0m08:49:01.780137 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.581 seconds
+[0m08:49:01.785651 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa851136a40>]}
+[0m08:49:01.787816 [info ] [Thread-4 (]: 3 of 9 OK created sql view model silver.stg_loans .............................. [[32mSUCCESS 1[0m in 0.68s]
+[0m08:49:01.789362 [debug] [Thread-4 (]: Finished running node model.real_estate_pipeline.stg_loans
+[0m08:49:01.791106 [debug] [Thread-4 (]: Began running node model.real_estate_pipeline.fct_loans
+[0m08:49:01.792284 [info ] [Thread-4 (]: 7 of 9 START sql table model gold.fct_loans .................................... [RUN]
+[0m08:49:01.793651 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.stg_loans, now model.real_estate_pipeline.fct_loans)
+[0m08:49:01.797773 [debug] [Thread-4 (]: Began compiling node model.real_estate_pipeline.fct_loans
+[0m08:49:01.800615 [debug] [Thread-4 (]: Writing injected SQL for node "model.real_estate_pipeline.fct_loans"
+[0m08:49:01.812870 [debug] [Thread-4 (]: Began executing node model.real_estate_pipeline.fct_loans
+[0m08:49:01.819910 [debug] [Thread-4 (]: Writing runtime sql for node "model.real_estate_pipeline.fct_loans"
+[0m08:49:01.834854 [debug] [Thread-4 (]: Using snowflake connection "model.real_estate_pipeline.fct_loans"
+[0m08:49:01.836336 [debug] [Thread-4 (]: On model.real_estate_pipeline.fct_loans: create or replace transient table FINANCE_DW.gold.fct_loans
+    
+    
+    
+    
+    
+
+    as (select
+    l.loan_id,
+    l.account_id,
+    a.customer_id,
+    l.loan_status_id,
+    to_char(l.start_date::date, 'YYYYMMDD')::int as date_id,
+    l.principal_amount,
+    l.interest_rate,
+    l.start_date,
+    l.estimated_end_date
+from FINANCE_DW.silver.stg_loans l
+left join FINANCE_DW.silver.stg_accounts a on l.account_id = a.account_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.fct_loans"} */;
+[0m08:49:02.228748 [debug] [Thread-3 (]: SQL status: SUCCESS 1651 in 0.683 seconds
+[0m08:49:02.232357 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa8427bf910>]}
+[0m08:49:02.233491 [info ] [Thread-3 (]: 5 of 9 OK created sql table model gold.dim_accounts ............................ [[32mSUCCESS 1651[0m in 0.74s]
+[0m08:49:02.234719 [debug] [Thread-3 (]: Finished running node model.real_estate_pipeline.dim_accounts
+[0m08:49:02.293926 [debug] [Thread-2 (]: SQL status: SUCCESS 1100 in 0.746 seconds
+[0m08:49:02.298250 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa852907a00>]}
+[0m08:49:02.299378 [info ] [Thread-2 (]: 6 of 9 OK created sql table model gold.dim_customers ........................... [[32mSUCCESS 1100[0m in 0.80s]
+[0m08:49:02.300353 [debug] [Thread-2 (]: Finished running node model.real_estate_pipeline.dim_customers
+[0m08:49:02.570959 [debug] [Thread-4 (]: SQL status: SUCCESS 330 in 0.733 seconds
+[0m08:49:02.576489 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa8427bf460>]}
+[0m08:49:02.577955 [info ] [Thread-4 (]: 7 of 9 OK created sql table model gold.fct_loans ............................... [[32mSUCCESS 330[0m in 0.78s]
+[0m08:49:02.579133 [debug] [Thread-4 (]: Finished running node model.real_estate_pipeline.fct_loans
+[0m08:49:03.553059 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.351 seconds
+[0m08:49:03.558689 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa8511372b0>]}
+[0m08:49:03.561048 [info ] [Thread-5 (]: 4 of 9 OK created sql view model silver.stg_transactions ....................... [[32mSUCCESS 1[0m in 2.45s]
+[0m08:49:03.562800 [debug] [Thread-5 (]: Finished running node model.real_estate_pipeline.stg_transactions
+[0m08:49:03.567151 [debug] [Thread-3 (]: Began running node model.real_estate_pipeline.dim_date
+[0m08:49:03.567614 [debug] [Thread-2 (]: Began running node model.real_estate_pipeline.fct_transactions
+[0m08:49:03.568482 [info ] [Thread-3 (]: 8 of 9 START sql table model gold.dim_date ..................................... [RUN]
+[0m08:49:03.569302 [info ] [Thread-2 (]: 9 of 9 START sql table model gold.fct_transactions ............................. [RUN]
+[0m08:49:03.570102 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.dim_accounts, now model.real_estate_pipeline.dim_date)
+[0m08:49:03.570811 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.real_estate_pipeline.dim_customers, now model.real_estate_pipeline.fct_transactions)
+[0m08:49:03.571442 [debug] [Thread-3 (]: Began compiling node model.real_estate_pipeline.dim_date
+[0m08:49:03.572046 [debug] [Thread-2 (]: Began compiling node model.real_estate_pipeline.fct_transactions
+[0m08:49:03.574046 [debug] [Thread-3 (]: Writing injected SQL for node "model.real_estate_pipeline.dim_date"
+[0m08:49:03.576641 [debug] [Thread-2 (]: Writing injected SQL for node "model.real_estate_pipeline.fct_transactions"
+[0m08:49:03.581736 [debug] [Thread-3 (]: Began executing node model.real_estate_pipeline.dim_date
+[0m08:49:03.582425 [debug] [Thread-2 (]: Began executing node model.real_estate_pipeline.fct_transactions
+[0m08:49:03.584101 [debug] [Thread-3 (]: Writing runtime sql for node "model.real_estate_pipeline.dim_date"
+[0m08:49:03.587213 [debug] [Thread-2 (]: Writing runtime sql for node "model.real_estate_pipeline.fct_transactions"
+[0m08:49:03.591305 [debug] [Thread-2 (]: Using snowflake connection "model.real_estate_pipeline.fct_transactions"
+[0m08:49:03.592899 [debug] [Thread-3 (]: Using snowflake connection "model.real_estate_pipeline.dim_date"
+[0m08:49:03.593237 [debug] [Thread-2 (]: On model.real_estate_pipeline.fct_transactions: create or replace transient table FINANCE_DW.gold.fct_transactions
+    
+    
+    
+    
+    
+
+    as (select
+    t.transaction_id,
+    t.account_origin_id,
+    t.account_destination_id,
+    a.customer_id as origin_customer_id,
+    t.transaction_type_id,
+    t.branch_id,
+    to_char(t.transaction_date::date, 'YYYYMMDD')::int as date_id,
+    t.transaction_date,
+    t.amount
+from FINANCE_DW.silver.stg_transactions t
+left join FINANCE_DW.silver.stg_accounts a on t.account_origin_id = a.account_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.fct_transactions"} */;
+[0m08:49:03.595256 [debug] [Thread-3 (]: On model.real_estate_pipeline.dim_date: create or replace transient table FINANCE_DW.gold.dim_date
+    
+    
+    
+    
+    
+
+    as (with dates as (
+    select transaction_date::date as date_day from FINANCE_DW.silver.stg_transactions
+    union
+    select start_date::date as date_day from FINANCE_DW.silver.stg_loans
+    union
+    select opening_date::date as date_day from FINANCE_DW.silver.stg_accounts
+)
+
+select distinct
+    to_char(date_day, 'YYYYMMDD')::int as date_id,
+    date_day as full_date,
+    year(date_day) as year,
+    quarter(date_day) as quarter,
+    month(date_day) as month,
+    monthname(date_day) as month_name,
+    day(date_day) as day,
+    dayname(date_day) as day_of_week
+from dates
+where date_day is not null
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.real_estate_pipeline.dim_date"} */;
+[0m08:49:04.368808 [debug] [Thread-2 (]: SQL status: SUCCESS 49500 in 0.771 seconds
+[0m08:49:04.374403 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa8511371c0>]}
+[0m08:49:04.376356 [info ] [Thread-2 (]: 9 of 9 OK created sql table model gold.fct_transactions ........................ [[32mSUCCESS 49500[0m in 0.80s]
+[0m08:49:04.377752 [debug] [Thread-2 (]: Finished running node model.real_estate_pipeline.fct_transactions
+[0m08:49:04.443834 [debug] [Thread-3 (]: SQL status: SUCCESS 2253 in 0.844 seconds
+[0m08:49:04.450183 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '219cf14b-6be2-4ad7-86e2-e5121c8dba57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa84270e440>]}
+[0m08:49:04.451929 [info ] [Thread-3 (]: 8 of 9 OK created sql table model gold.dim_date ................................ [[32mSUCCESS 2253[0m in 0.88s]
+[0m08:49:04.453004 [debug] [Thread-3 (]: Finished running node model.real_estate_pipeline.dim_date
+[0m08:49:04.455090 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:49:04.456919 [debug] [MainThread]: Connection 'model.real_estate_pipeline.fct_transactions' was left open.
+[0m08:49:04.457532 [debug] [MainThread]: On model.real_estate_pipeline.fct_transactions: Close
+[0m08:49:04.591552 [debug] [MainThread]: Connection 'model.real_estate_pipeline.dim_date' was left open.
+[0m08:49:04.594156 [debug] [MainThread]: On model.real_estate_pipeline.dim_date: Close
+[0m08:49:04.732459 [debug] [MainThread]: Connection 'model.real_estate_pipeline.fct_loans' was left open.
+[0m08:49:04.735461 [debug] [MainThread]: On model.real_estate_pipeline.fct_loans: Close
+[0m08:49:04.875642 [debug] [MainThread]: Connection 'model.real_estate_pipeline.stg_transactions' was left open.
+[0m08:49:04.877822 [debug] [MainThread]: On model.real_estate_pipeline.stg_transactions: Close
+[0m08:49:05.010138 [info ] [MainThread]: 
+[0m08:49:05.012121 [info ] [MainThread]: Finished running 5 table models, 4 view models in 0 hours 0 minutes and 5.60 seconds (5.60s).
+[0m08:49:05.015524 [debug] [MainThread]: Command end result
+[0m08:49:05.069925 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:49:05.074089 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:49:05.082662 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:49:05.090785 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m08:49:05.091483 [info ] [MainThread]: 
+[0m08:49:05.092229 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:49:05.092881 [info ] [MainThread]: 
+[0m08:49:05.093471 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[0m08:49:05.094532 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.056908, "process_in_blocks": "0", "process_kernel_time": 1.287305, "process_mem_max_rss": "227788", "process_out_blocks": "16", "process_user_time": 3.066934}
+[0m08:49:05.095973 [debug] [MainThread]: Command `dbt run` succeeded at 08:49:05.095853 after 7.06 seconds
+[0m08:49:05.096770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa8893f5fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa888737340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aa887cd5480>]}
+[0m08:49:05.097516 [debug] [MainThread]: Flushing usage events
+[0m08:49:05.736926 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:49:08.152222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7028758f1d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7028741aa7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7028741aa770>]}
+
+
+============================== 08:49:08.157050 | 5f63f6f7-cc19-4268-8924-1d0f065c35d9 ==============================
+[0m08:49:08.157050 [info ] [MainThread]: Running with dbt=1.12.0
+[0m08:49:08.157893 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'target_path': 'None', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'indirect_selection': 'eager', 'write_json': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'no_print': 'None', 'warn_error': 'None', 'invocation_command': 'dbt test', 'debug': 'False', 'empty': 'None', 'introspect': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'quiet': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'log_format': 'default', 'profiles_dir': '/opt/airflow/dbt_project', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'cache_selected_only': 'False', 'hints_enabled': 'True'}
+[0m08:49:08.661051 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:49:08.662385 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:49:08.663258 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:49:08.821300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5f63f6f7-cc19-4268-8924-1d0f065c35d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702874128b50>]}
+[0m08:49:08.869921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5f63f6f7-cc19-4268-8924-1d0f065c35d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70283f6748b0>]}
+[0m08:49:08.872242 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m08:49:08.956517 [debug] [MainThread]: checksum: 17b8c0eed372bdc76158915a5b86153b95ebcdfebef695d6713d3c569800f71e, vars: {}, profile: dbt_project, target: dev, version: 1.12.0
+[0m08:49:09.207250 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:49:09.208522 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:49:09.209144 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:49:09.217002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5f63f6f7-cc19-4268-8924-1d0f065c35d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70283e41a170>]}
+[0m08:49:09.357499 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:49:09.361206 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:49:09.371475 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:49:09.391025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5f63f6f7-cc19-4268-8924-1d0f065c35d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70283df89930>]}
+[0m08:49:09.391903 [info ] [MainThread]: Found 9 models, 21 data tests, 4 sources, 546 macros
+[0m08:49:09.392678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5f63f6f7-cc19-4268-8924-1d0f065c35d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70283e87ac20>]}
+[0m08:49:09.396349 [info ] [MainThread]: 
+[0m08:49:09.398468 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m08:49:09.404164 [info ] [MainThread]: 
+[0m08:49:09.406887 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:49:09.416306 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW_gold'
+[0m08:49:09.417039 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_FINANCE_DW_silver'
+[0m08:49:09.438509 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:49:09.439687 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:49:09.440506 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show objects in FINANCE_DW.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */;
+[0m08:49:09.441163 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show objects in FINANCE_DW.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */;
+[0m08:49:09.441781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:49:09.442432 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:49:09.946307 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.504 seconds
+[0m08:49:09.953673 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_gold"
+[0m08:49:09.954999 [debug] [ThreadPool]: On list_FINANCE_DW_gold: show user functions in FINANCE_DW.gold
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_gold"} */
+[0m08:49:09.958655 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.516 seconds
+[0m08:49:09.961635 [debug] [ThreadPool]: Using snowflake connection "list_FINANCE_DW_silver"
+[0m08:49:09.962695 [debug] [ThreadPool]: On list_FINANCE_DW_silver: show user functions in FINANCE_DW.silver
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_FINANCE_DW_silver"} */
+[0m08:49:10.054107 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.090 seconds
+[0m08:49:10.057798 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.102 seconds
+[0m08:49:10.060155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5f63f6f7-cc19-4268-8924-1d0f065c35d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702874111570>]}
+[0m08:49:10.064382 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:49:10.064821 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:49:10.065307 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:49:10.065696 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:49:10.066272 [info ] [Thread-2 (]: 1 of 21 START test not_null_dim_accounts_account_id ............................ [RUN]
+[0m08:49:10.067001 [info ] [Thread-3 (]: 2 of 21 START test not_null_dim_customers_customer_id .......................... [RUN]
+[0m08:49:10.067664 [info ] [Thread-4 (]: 3 of 21 START test not_null_dim_date_date_id ................................... [RUN]
+[0m08:49:10.068332 [info ] [Thread-5 (]: 4 of 21 START test not_null_fct_loans_loan_id .................................. [RUN]
+[0m08:49:10.069105 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_gold, now test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841)
+[0m08:49:10.069882 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_FINANCE_DW_silver, now test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m08:49:10.070686 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.real_estate_pipeline.not_null_dim_date_date_id.3077875806'
+[0m08:49:10.072652 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330'
+[0m08:49:10.074311 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:49:10.076443 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:49:10.077118 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:49:10.077699 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:49:10.091720 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"
+[0m08:49:10.097124 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m08:49:10.102605 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"
+[0m08:49:10.110998 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"
+[0m08:49:10.119957 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:49:10.120515 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:49:10.121893 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:49:10.133550 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:49:10.141159 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"
+[0m08:49:10.143319 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m08:49:10.146039 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"
+[0m08:49:10.148335 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"
+[0m08:49:10.156718 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m08:49:10.157533 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"
+[0m08:49:10.158666 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from FINANCE_DW.gold.dim_customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d"} */
+[0m08:49:10.159473 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"
+[0m08:49:10.160415 [debug] [Thread-5 (]: On test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_id
+from FINANCE_DW.gold.fct_loans
+where loan_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330"} */
+[0m08:49:10.161198 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"
+[0m08:49:10.165055 [debug] [Thread-4 (]: On test.real_estate_pipeline.not_null_dim_date_date_id.3077875806: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_id
+from FINANCE_DW.gold.dim_date
+where date_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_dim_date_date_id.3077875806"} */
+[0m08:49:10.166426 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m08:49:10.167594 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select account_id
+from FINANCE_DW.gold.dim_accounts
+where account_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841"} */
+[0m08:49:10.168708 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m08:49:10.365929 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.204 seconds
+[0m08:49:10.374523 [info ] [Thread-3 (]: 2 of 21 PASS not_null_dim_customers_customer_id ................................ [[32mPASS[0m in 0.30s]
+[0m08:49:10.375938 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m08:49:10.376845 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:49:10.377783 [info ] [Thread-3 (]: 5 of 21 START test not_null_fct_transactions_transaction_id .................... [RUN]
+[0m08:49:10.378769 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_dim_customers_customer_id.dd91cd1c8d, now test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa)
+[0m08:49:10.379717 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:49:10.385667 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"
+[0m08:49:10.395055 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:49:10.398136 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"
+[0m08:49:10.405915 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"
+[0m08:49:10.406777 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from FINANCE_DW.gold.fct_transactions
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa"} */
+[0m08:49:10.435838 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.262 seconds
+[0m08:49:10.439577 [info ] [Thread-2 (]: 1 of 21 PASS not_null_dim_accounts_account_id .................................. [[32mPASS[0m in 0.37s]
+[0m08:49:10.440680 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841
+[0m08:49:10.441579 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:49:10.443668 [info ] [Thread-2 (]: 6 of 21 START test not_null_stg_accounts_account_id ............................ [RUN]
+[0m08:49:10.445622 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_dim_accounts_account_id.cc26245841, now test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108)
+[0m08:49:10.446661 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:49:10.452924 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"
+[0m08:49:10.460863 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:49:10.464294 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"
+[0m08:49:10.471292 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"
+[0m08:49:10.473083 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select account_id
+from FINANCE_DW.silver.stg_accounts
+where account_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108"} */
+[0m08:49:10.612930 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m08:49:10.619018 [info ] [Thread-2 (]: 6 of 21 PASS not_null_stg_accounts_account_id .................................. [[32mPASS[0m in 0.17s]
+[0m08:49:10.620592 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108
+[0m08:49:10.621734 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:49:10.622649 [info ] [Thread-2 (]: 7 of 21 START test not_null_stg_accounts_customer_id ........................... [RUN]
+[0m08:49:10.624289 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_accounts_account_id.182dfbc108, now test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3)
+[0m08:49:10.625089 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:49:10.630112 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"
+[0m08:49:10.635886 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:49:10.637870 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"
+[0m08:49:10.640092 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.233 seconds
+[0m08:49:10.642222 [info ] [Thread-3 (]: 5 of 21 PASS not_null_fct_transactions_transaction_id .......................... [[32mPASS[0m in 0.26s]
+[0m08:49:10.643115 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa
+[0m08:49:10.644660 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:49:10.645479 [info ] [Thread-3 (]: 8 of 21 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m08:49:10.646704 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_fct_transactions_transaction_id.2c6b5372aa, now test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m08:49:10.647361 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"
+[0m08:49:10.647923 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:49:10.648466 [debug] [Thread-2 (]: On test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from FINANCE_DW.silver.stg_accounts
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3"} */
+[0m08:49:10.653598 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m08:49:10.664239 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:49:10.666408 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m08:49:10.670617 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.502 seconds
+[0m08:49:10.674138 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m08:49:10.673496 [info ] [Thread-4 (]: 3 of 21 PASS not_null_dim_date_date_id ......................................... [[32mPASS[0m in 0.60s]
+[0m08:49:10.675148 [debug] [Thread-3 (]: On test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from FINANCE_DW.silver.stg_customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+[0m08:49:10.675982 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.not_null_dim_date_date_id.3077875806
+[0m08:49:10.677729 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:49:10.678513 [info ] [Thread-4 (]: 9 of 21 START test not_null_stg_loans_loan_id .................................. [RUN]
+[0m08:49:10.679304 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_dim_date_date_id.3077875806, now test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c)
+[0m08:49:10.679932 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:49:10.685378 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"
+[0m08:49:10.686576 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.520 seconds
+[0m08:49:10.688645 [info ] [Thread-5 (]: 4 of 21 PASS not_null_fct_loans_loan_id ........................................ [[32mPASS[0m in 0.62s]
+[0m08:49:10.689608 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330
+[0m08:49:10.690264 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:49:10.691052 [info ] [Thread-5 (]: 10 of 21 START test not_null_stg_transactions_transaction_id ................... [RUN]
+[0m08:49:10.692366 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_fct_loans_loan_id.1067693330, now test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4)
+[0m08:49:10.693068 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:49:10.698776 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"
+[0m08:49:10.699164 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:49:10.701320 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"
+[0m08:49:10.706000 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:49:10.708294 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"
+[0m08:49:10.709416 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"
+[0m08:49:10.710079 [debug] [Thread-4 (]: On test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_id
+from FINANCE_DW.silver.stg_loans
+where loan_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c"} */
+[0m08:49:10.713428 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"
+[0m08:49:10.714548 [debug] [Thread-5 (]: On test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from FINANCE_DW.silver.stg_transactions
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4"} */
+[0m08:49:10.798702 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.142 seconds
+[0m08:49:10.802547 [info ] [Thread-2 (]: 7 of 21 PASS not_null_stg_accounts_customer_id ................................. [[32mPASS[0m in 0.18s]
+[0m08:49:10.805768 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3
+[0m08:49:10.806787 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:49:10.807792 [info ] [Thread-2 (]: 11 of 21 START test relationships_fct_loans_customer_id__customer_id__ref_dim_customers_  [RUN]
+[0m08:49:10.808841 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_accounts_customer_id.0b54f014a3, now test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a)
+[0m08:49:10.809557 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:49:10.823471 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"
+[0m08:49:10.830020 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:49:10.832110 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"
+[0m08:49:10.837914 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"
+[0m08:49:10.839066 [debug] [Thread-2 (]: On test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from FINANCE_DW.gold.fct_loans
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from FINANCE_DW.gold.dim_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a"} */
+[0m08:49:10.843923 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.133 seconds
+[0m08:49:10.847374 [info ] [Thread-4 (]: 9 of 21 PASS not_null_stg_loans_loan_id ........................................ [[32mPASS[0m in 0.17s]
+[0m08:49:10.848954 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c
+[0m08:49:10.850200 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:49:10.851419 [info ] [Thread-4 (]: 12 of 21 START test relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_  [RUN]
+[0m08:49:10.852695 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.137 seconds
+[0m08:49:10.853743 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_loans_loan_id.b77c69982c, now test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691)
+[0m08:49:10.856691 [info ] [Thread-5 (]: 10 of 21 PASS not_null_stg_transactions_transaction_id ......................... [[32mPASS[0m in 0.16s]
+[0m08:49:10.857804 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:49:10.858925 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4
+[0m08:49:10.866818 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"
+[0m08:49:10.868029 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:49:10.869866 [info ] [Thread-5 (]: 13 of 21 START test unique_dim_accounts_account_id ............................. [RUN]
+[0m08:49:10.871094 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_transactions_transaction_id.1d00a8e2e4, now test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc)
+[0m08:49:10.872243 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:49:10.880171 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"
+[0m08:49:10.884362 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:49:10.887127 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"
+[0m08:49:10.889176 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:49:10.891160 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"
+[0m08:49:10.897812 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"
+[0m08:49:10.899212 [debug] [Thread-4 (]: On test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select origin_customer_id as from_field
+    from FINANCE_DW.gold.fct_transactions
+    where origin_customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from FINANCE_DW.gold.dim_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691"} */
+[0m08:49:10.900868 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"
+[0m08:49:10.902789 [debug] [Thread-5 (]: On test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    account_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.dim_accounts
+where account_id is not null
+group by account_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc"} */
+[0m08:49:11.050162 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.210 seconds
+[0m08:49:11.052468 [info ] [Thread-2 (]: 11 of 21 PASS relationships_fct_loans_customer_id__customer_id__ref_dim_customers_  [[32mPASS[0m in 0.24s]
+[0m08:49:11.054671 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a
+[0m08:49:11.055421 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:49:11.056028 [info ] [Thread-2 (]: 14 of 21 START test unique_dim_customers_customer_id ........................... [RUN]
+[0m08:49:11.056781 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.relationships_fct_loans_customer_id__customer_id__ref_dim_customers_.7f8ad0794a, now test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m08:49:11.057423 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:49:11.062532 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m08:49:11.070425 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:49:11.072325 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m08:49:11.077771 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m08:49:11.078539 [debug] [Thread-2 (]: On test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.dim_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd"} */
+[0m08:49:11.157914 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.481 seconds
+[0m08:49:11.162164 [info ] [Thread-3 (]: 8 of 21 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.52s]
+[0m08:49:11.164377 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m08:49:11.165397 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:49:11.166186 [info ] [Thread-3 (]: 15 of 21 START test unique_dim_date_date_id .................................... [RUN]
+[0m08:49:11.167022 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d)
+[0m08:49:11.167614 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:49:11.172533 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"
+[0m08:49:11.186916 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:49:11.190318 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"
+[0m08:49:11.201709 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"
+[0m08:49:11.203814 [debug] [Thread-3 (]: On test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    date_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.dim_date
+where date_id is not null
+group by date_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d"} */
+[0m08:49:11.208599 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.129 seconds
+[0m08:49:11.210800 [info ] [Thread-2 (]: 14 of 21 PASS unique_dim_customers_customer_id ................................. [[32mPASS[0m in 0.15s]
+[0m08:49:11.213140 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd
+[0m08:49:11.214129 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:49:11.214878 [info ] [Thread-2 (]: 16 of 21 START test unique_fct_loans_loan_id ................................... [RUN]
+[0m08:49:11.215703 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_dim_customers_customer_id.15c9f1e2fd, now test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329)
+[0m08:49:11.216470 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:49:11.222304 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"
+[0m08:49:11.230046 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:49:11.232053 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"
+[0m08:49:11.240530 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"
+[0m08:49:11.242357 [debug] [Thread-2 (]: On test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    loan_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.fct_loans
+where loan_id is not null
+group by loan_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329"} */
+[0m08:49:11.309724 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.406 seconds
+[0m08:49:11.313977 [info ] [Thread-5 (]: 13 of 21 PASS unique_dim_accounts_account_id ................................... [[32mPASS[0m in 0.44s]
+[0m08:49:11.315285 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc
+[0m08:49:11.316294 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:49:11.317132 [info ] [Thread-5 (]: 17 of 21 START test unique_fct_transactions_transaction_id ..................... [RUN]
+[0m08:49:11.317951 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_dim_accounts_account_id.bfd6344edc, now test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53)
+[0m08:49:11.318744 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:49:11.324679 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"
+[0m08:49:11.329061 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:49:11.330827 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"
+[0m08:49:11.336936 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"
+[0m08:49:11.337782 [debug] [Thread-5 (]: On test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    transaction_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.gold.fct_transactions
+where transaction_id is not null
+group by transaction_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53"} */
+[0m08:49:11.340276 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.136 seconds
+[0m08:49:11.342723 [info ] [Thread-3 (]: 15 of 21 PASS unique_dim_date_date_id .......................................... [[32mPASS[0m in 0.18s]
+[0m08:49:11.344234 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d
+[0m08:49:11.344945 [debug] [Thread-3 (]: Began running node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:49:11.345713 [info ] [Thread-3 (]: 18 of 21 START test unique_stg_accounts_account_id ............................. [RUN]
+[0m08:49:11.346469 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_dim_date_date_id.7286dcb90d, now test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79)
+[0m08:49:11.347036 [debug] [Thread-3 (]: Began compiling node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:49:11.352056 [debug] [Thread-3 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"
+[0m08:49:11.357561 [debug] [Thread-3 (]: Began executing node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:49:11.359387 [debug] [Thread-3 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"
+[0m08:49:11.364066 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.120 seconds
+[0m08:49:11.366572 [info ] [Thread-2 (]: 16 of 21 PASS unique_fct_loans_loan_id ......................................... [[32mPASS[0m in 0.15s]
+[0m08:49:11.368022 [debug] [Thread-3 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"
+[0m08:49:11.368459 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329
+[0m08:49:11.369090 [debug] [Thread-3 (]: On test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    account_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_accounts
+where account_id is not null
+group by account_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79"} */
+[0m08:49:11.369766 [debug] [Thread-2 (]: Began running node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:49:11.371579 [info ] [Thread-2 (]: 19 of 21 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m08:49:11.372360 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_fct_loans_loan_id.b0f955a329, now test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada)
+[0m08:49:11.373451 [debug] [Thread-2 (]: Began compiling node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:49:11.378998 [debug] [Thread-2 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"
+[0m08:49:11.388383 [debug] [Thread-2 (]: Began executing node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:49:11.390472 [debug] [Thread-2 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"
+[0m08:49:11.397846 [debug] [Thread-2 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"
+[0m08:49:11.398966 [debug] [Thread-2 (]: On test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada"} */
+[0m08:49:11.512365 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.173 seconds
+[0m08:49:11.516359 [info ] [Thread-5 (]: 17 of 21 PASS unique_fct_transactions_transaction_id ........................... [[32mPASS[0m in 0.20s]
+[0m08:49:11.517740 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.618 seconds
+[0m08:49:11.518431 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53
+[0m08:49:11.520185 [info ] [Thread-4 (]: 12 of 21 PASS relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_  [[32mPASS[0m in 0.67s]
+[0m08:49:11.520900 [debug] [Thread-5 (]: Began running node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:49:11.521710 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691
+[0m08:49:11.522389 [info ] [Thread-5 (]: 20 of 21 START test unique_stg_loans_loan_id ................................... [RUN]
+[0m08:49:11.524406 [debug] [Thread-4 (]: Began running node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:49:11.525230 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.155 seconds
+[0m08:49:11.526080 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.unique_fct_transactions_transaction_id.c963611c53, now test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63)
+[0m08:49:11.527102 [info ] [Thread-4 (]: 21 of 21 START test unique_stg_transactions_transaction_id ..................... [RUN]
+[0m08:49:11.528874 [info ] [Thread-3 (]: 18 of 21 PASS unique_stg_accounts_account_id ................................... [[32mPASS[0m in 0.18s]
+[0m08:49:11.529547 [debug] [Thread-5 (]: Began compiling node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:49:11.530274 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.real_estate_pipeline.relationships_fct_transactions_origin_customer_id__customer_id__ref_dim_customers_.16c642f691, now test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396)
+[0m08:49:11.531162 [debug] [Thread-3 (]: Finished running node test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79
+[0m08:49:11.536829 [debug] [Thread-5 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"
+[0m08:49:11.538837 [debug] [Thread-4 (]: Began compiling node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:49:11.545340 [debug] [Thread-4 (]: Writing injected SQL for node "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"
+[0m08:49:11.548176 [debug] [Thread-5 (]: Began executing node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:49:11.548800 [debug] [Thread-4 (]: Began executing node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:49:11.550299 [debug] [Thread-5 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"
+[0m08:49:11.552370 [debug] [Thread-4 (]: Writing runtime sql for node "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"
+[0m08:49:11.558162 [debug] [Thread-5 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"
+[0m08:49:11.560595 [debug] [Thread-5 (]: On test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    loan_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_loans
+where loan_id is not null
+group by loan_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63"} */
+[0m08:49:11.561414 [debug] [Thread-4 (]: Using snowflake connection "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"
+[0m08:49:11.565839 [debug] [Thread-4 (]: On test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    transaction_id as unique_field,
+    count(*) as n_records
+
+from FINANCE_DW.silver.stg_transactions
+where transaction_id is not null
+group by transaction_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "dbt_project", "target_name": "dev", "node_id": "test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396"} */
+[0m08:49:11.572761 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.173 seconds
+[0m08:49:11.575782 [info ] [Thread-2 (]: 19 of 21 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.20s]
+[0m08:49:11.576875 [debug] [Thread-2 (]: Finished running node test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada
+[0m08:49:11.729120 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.166 seconds
+[0m08:49:11.731408 [info ] [Thread-5 (]: 20 of 21 PASS unique_stg_loans_loan_id ......................................... [[32mPASS[0m in 0.21s]
+[0m08:49:11.734318 [debug] [Thread-5 (]: Finished running node test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63
+[0m08:49:11.781816 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m08:49:11.786122 [info ] [Thread-4 (]: 21 of 21 PASS unique_stg_transactions_transaction_id ........................... [[32mPASS[0m in 0.26s]
+[0m08:49:11.787399 [debug] [Thread-4 (]: Finished running node test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396
+[0m08:49:11.789374 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:49:11.790063 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada' was left open.
+[0m08:49:11.791147 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_customers_customer_id.c7614daada: Close
+[0m08:49:11.917694 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79' was left open.
+[0m08:49:11.919832 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_accounts_account_id.cdf6252c79: Close
+[0m08:49:12.060918 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396' was left open.
+[0m08:49:12.063669 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_transactions_transaction_id.ee9a78a396: Close
+[0m08:49:12.219140 [debug] [MainThread]: Connection 'test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63' was left open.
+[0m08:49:12.220828 [debug] [MainThread]: On test.real_estate_pipeline.unique_stg_loans_loan_id.be67636b63: Close
+[0m08:49:12.363243 [info ] [MainThread]: 
+[0m08:49:12.365378 [info ] [MainThread]: Finished running 21 data tests in 0 hours 0 minutes and 2.96 seconds (2.96s).
+[0m08:49:12.367925 [debug] [MainThread]: Command end result
+[0m08:49:12.415280 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m08:49:12.419584 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m08:49:12.424185 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt_project/target/osi_document.json
+[0m08:49:12.435240 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m08:49:12.437456 [info ] [MainThread]: 
+[0m08:49:12.442175 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:49:12.443339 [info ] [MainThread]: 
+[0m08:49:12.449778 [info ] [MainThread]: Done. PASS=21 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=21
+[0m08:49:12.452463 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 4.3661494, "process_in_blocks": "0", "process_kernel_time": 1.334853, "process_mem_max_rss": "228472", "process_out_blocks": "16", "process_user_time": 3.283018}
+[0m08:49:12.453917 [debug] [MainThread]: Command `dbt test` succeeded at 08:49:12.453812 after 4.37 seconds
+[0m08:49:12.454636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7028758f1d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702876cc79a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70283f6748b0>]}
+[0m08:49:12.455317 [debug] [MainThread]: Flushing usage events
+[0m08:49:13.009792 [debug] [MainThread]: An error was encountered while trying to flush usage events
